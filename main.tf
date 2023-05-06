@@ -13,7 +13,7 @@ resource "aws_s3_bucket" "this" {
 
   tags = {
     Name        = "my_bucket"
-    Environment = "dev"
+    Environment = var.env
   }
 }
 
