@@ -13,3 +13,7 @@ variable "vpc_name" {
   type        = string
   default     = "vpc-05ccb69fbbb86d17c"
 }
+variable "env" {
+  description = "lifecycle name"
+  type        = string
+}
