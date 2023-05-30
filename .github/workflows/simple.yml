@@ -1,0 +1,12 @@
+name: Shell Commands
+on: [push, pull_request]
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run hello world
+        run: echo "hello world"
+      - name: run more commands
+        run: |
+          python --version
+          npm -v
